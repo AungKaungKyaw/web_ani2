@@ -1,0 +1,47 @@
+
+*{
+ color: black;
+ padding: 0;
+ margin: 0;
+}
+nav ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+
+}
+nav ul li{
+ position: relative;
+ display: inline-block;
+ padding: 10px 20px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ border-radius: 3px;
+ width: 200px;
+
+}
+
+
+nav ul li ul {
+
+ position: absolute;
+ display: none;
+ top: 100%;
+ left: 0;
+}
+
+nav ul li:hover ul {
+ display: block;
+}
+nav ul ul ul{
+ display: none;!important;
+ top: 0;
+ left: 100%;
+}
+
+/* for sub menu*/
+nav ul > li > ul li:hover > ul{
+ display: block;
+}
+
+
+

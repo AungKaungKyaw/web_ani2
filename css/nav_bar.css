@@ -1,0 +1,31 @@
+nav{
+    background-color: #48cae4;
+}
+nav ul{
+    all: unset;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #48cae4;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li ul{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+}
+nav ul ul li{
+    width: max-content;
+    min-width: 100%;
+    max-width: 200px;
+}
+nav ul a{
+    all
+}

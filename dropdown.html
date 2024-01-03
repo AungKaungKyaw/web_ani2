@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* Style for the navigation menu */
+    nav {
+      background-color: #333;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    /* Style for the dropdown menus */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    nav ul li:hover > ul {
+      display: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">About</a>
+      <ul>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">History</a></li>
+      </ul>

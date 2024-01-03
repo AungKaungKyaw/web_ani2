@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wait 3 Seconds</title>
+    <link rel="stylesheet" href="css/flex_box.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item item0"></div>
+    <div class="flex-item item1"></div>
+    <div class="flex-item item2"></div>
+    <div class="flex-item item3"></div>
+    <div class="flex-item item4"></div>
+    <div class="flex-item item5"></div>
+    <div class="flex-item item6"></div>
+    <div class="flex-item item7"></div>
+    <div class="flex-item item8"></div>
+
+
+</div>
+<br>
+<div class="flex-container">
+    <div class="flex-item item9"></div>
+    <div class="flex-item item10"></div>
+    <div class="flex-item item11"></div>
+    <div class="flex-item item12"></div>
+    <div class="flex-item item13"></div>
+    <div class="flex-item item14"></div>
+    <div class="flex-item item15"></div>
+    <div class="flex-item item16"></div>
+    <div class="flex-item item17"></div>
+
+
+
+
+</div>
+
+<script>
+    setTimeout(function() {
+        // Your javascript code here
+        console.log('Hello, world!');
+    }, 3000); // 3000 milliseconds is equal to 3 seconds
+</script>
+
+<script>
+    function change_color(e){
+        // Your code here
+        var color1 = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        var item1 = ".item"+Math.floor(Math.random() * 17).toString();
+        document.querySelector(item1).style.backgroundColor = color1;
+        document.querySelector(item1).style.transition = "background-color 2s ease-in-out";
+
+    }
+    function call_change_color(){
+        for(var j=0;j<100;j++){
+            requestAnimationFrame(function(){
+                change_color();
+            });
+        }
+    }
+    var asdf =0;
+
+
+    change_color();
+    var j=0;
+    for(var i=0;i<100;i++){
+        setTimeout(function(){
+            requestAnimationFrame(function(){
+                call_change_color();
+            });
+        },i*1000);
+        while(asdf!=999){
+            asdf++;
+            console.log("---")
+        }
+        asdf = 0;
+    }
+</script>
+
+</body>
+</html>

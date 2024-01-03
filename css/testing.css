@@ -1,0 +1,54 @@
+nav {
+    background:
+            #222;
+}
+
+nav ul {
+    all: unset;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background:
+            #222;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Style the subnavs */
+nav ul li ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul ul li {
+    width: max-content;
+    min-width: 100%;
+    max-width: 200px;
+}
+
+nav ul a {
+    all: unset;
+    color:
+            #fff;
+    cursor: pointer;
+}
+nav ul a:hover {
+    background:
+            rgba(0, 0, 0, 0.7);
+}
+
+nav ul li:hover > ul {
+    display: flex; /* Show subnavs on hover */
+}
+
+/* Style the third-level subnav */
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
